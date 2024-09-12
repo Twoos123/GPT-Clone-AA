@@ -1,0 +1,45 @@
+{
+  "name": "@gadget-client/aa-gpt-clone",
+  "version": "1.1.0-development.49",
+  "files": [
+    "dist-*/",
+    "types",
+    "types-esm",
+    "bin/"
+  ],
+  "source": "src/index.ts",
+  "types": "types/index.d.ts",
+  "main": "dist-cjs/index.js",
+  "module": "dist-esm/index.js",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./types-esm/index.d.ts",
+        "default": "./dist-esm/index.js"
+      },
+      "require": {
+        "types": "./types/index.d.ts",
+        "default": "./dist-cjs/index.js"
+      }
+    }
+  },
+  "private": true,
+  "dependencies": {
+    "@gadgetinc/api-client-core": "0.15.33"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4",
+    "@types/node": "^18.11.9",
+    "@urql/core": "^4.0.10",
+    "graphql": "^16.8.1",
+    "wonka": "^6.3.2"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "gadget": {
+    "applicationName": "aa-gpt-clone",
+    "environmentName": "Development",
+    "environmentVersion": "49"
+  }
+}

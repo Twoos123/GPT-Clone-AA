@@ -1,0 +1,57 @@
+{
+  "dependencies": {
+    "@fastify/request-context": "^3.0.0",
+    "@gadget-client/aa-gpt-clone": "link:../client",
+    "@gadgetinc/api-client-core": "0.15.33",
+    "@types/node": "^18.11.9",
+    "fastify": "^3.29.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4"
+  },
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "types": "./types/index.d.ts"
+    },
+    "./ai": {
+      "require": "./dist/ai/index.js",
+      "types": "./types/ai/index.d.ts"
+    },
+    "./bigcommerce": {
+      "require": "./dist/bigcommerce/index.js",
+      "types": "./types/bigcommerce/index.d.ts"
+    },
+    "./remix": {
+      "import": "./dist/remix/index.js",
+      "require": "./dist/remix/index.js",
+      "types": "./types/remix/index.d.ts"
+    },
+    "./shopify": {
+      "require": "./dist/shopify/index.js",
+      "types": "./types/shopify/index.d.ts"
+    },
+    "./vite": {
+      "import": "./dist/vite/index.js",
+      "require": "./dist/vite/index.js",
+      "types": "./types/vite/index.d.ts"
+    }
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "gadget": {
+    "applicationName": "aa-gpt-clone",
+    "environmentName": "Development",
+    "environmentVersion": "49"
+  },
+  "name": "gadget-server",
+  "peerDependencies": {
+    "openai": "*",
+    "vite": "^4.4.9 || ^5.3.5"
+  },
+  "private": true,
+  "scripts": {},
+  "types": "types/index.d.ts",
+  "version": "1.1.0-development.49"
+}

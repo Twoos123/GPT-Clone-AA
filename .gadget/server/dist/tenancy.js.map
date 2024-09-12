@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/tenancy.ts"],
+  "sourcesContent": ["export const AppTenancyKey: unique symbol = Symbol.for(\"gadget/appTenancy\");\n\nexport type AppTenant = Partial<{\n  shopify: ShopifyTenant;\n  bigcommerce: BigCommerceTenant;\n}>;\n\nexport type AppTenancy = Partial<{\n  shopify: ShopifyTenancy;\n  bigcommerce: BigCommerceTenancy;\n}>;\n\nexport type ShopifyTenant = Pick<ShopifyTenancy, \"shopId\" | \"customerId\" | \"currentSession\">;\nexport type ShopifyTenancy = {\n  shopId: bigint;\n  domain: string;\n  accessToken: string;\n  apiVersion: string;\n  clientId: string;\n  clientSecret: string;\n  customerId?: string;\n  currentSession?: {\n    token: string;\n    userId?: string;\n  };\n};\n\nexport type BigCommerceTenant = Pick<BigCommerceTenancy, \"storeHash\" | \"userId\">;\nexport type BigCommerceTenancy = {\n  storeHash: string;\n  storeId: string;\n  userId?: string;\n  accessToken: string;\n  clientId: string;\n  clientSecret: string;\n};\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAO,MAAM,gBAA+B,OAAO,IAAI,mBAAmB;",
+  "names": []
+}

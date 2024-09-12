@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/AppConnections.ts"],
+  "sourcesContent": ["    import OpenAI from \"openai\";\n\n\n\n    export interface OpenAIConnection extends OpenAI {\n        /**\n        * the Open AI configuration that can be used to instantiate other clients\n        */\n        configuration: {\n            apiKey: string;\n            baseUrl?: string;\n        }\n    }\n \n\n\n/**\n * A map from connection name to instantiated connection object for all the connections in aa-gpt-clone\n */\nexport interface AppConnections {\n  /** An instantiated API client object for the OpenAI connection. */\n  \"openai\": OpenAIConnection;\n};\n\n"],
+  "mappings": ";;;;;;;;;;;;;;AAAA;AAAA;AAsBC;",
+  "names": []
+}

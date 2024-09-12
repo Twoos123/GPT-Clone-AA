@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/AppConfiguration.ts"],
+  "sourcesContent": ["/**\n* A map from configuration value name to value all the configuration values and secrets in aa-gpt-clone.\n* __Note__: Any encrypted configuration values are decrypted and ready for use in this map.\n*/\nexport interface AppConfiguration {\n  GADGET_ENV: string | undefined;\n  GADGET_APP: string | undefined;\n  /**\n  * The value for the NODE_ENV environment variable set in the Gadget Environment Variables settings section. \n  */\n  NODE_ENV: string | undefined;\n  /**\n  * The value for the GOOGLE_CLIENT_ID environment variable set in the Gadget Environment Variables settings section. \n  */\n  GOOGLE_CLIENT_ID: string | undefined;\n  /**\n  * The value for the GOOGLE_CLIENT_SECRET environment variable set in the Gadget Environment Variables settings section. \n  */\n  GOOGLE_CLIENT_SECRET: string | undefined;\n};\n\n\ndeclare global {\n  namespace NodeJS {\n    interface ProcessEnv extends AppConfiguration {\n    }\n  }\n}\n"],
+  "mappings": ";;;;;;;;;;;;;;AAAA;AAAA;AAmBC;",
+  "names": []
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/remix/index.ts"],
+  "sourcesContent": ["/**\n * Parameters for running a Remix app in Gadget.\n */\nexport const remixViteOptions = {\n  buildDirectory: \".gadget/remix-dist/build\",\n  appDirectory: \"web\",\n};\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAGO,MAAM,mBAAmB;AAAA,EAC9B,gBAAgB;AAAA,EAChB,cAAc;AAChB;",
+  "names": []
+}

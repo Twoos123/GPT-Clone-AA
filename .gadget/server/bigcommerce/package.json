@@ -1,0 +1,4 @@
+{
+  "main": "../dist/bigcommerce/index.js",
+  "types": "../types/bigcommerce/index.d.ts"
+}

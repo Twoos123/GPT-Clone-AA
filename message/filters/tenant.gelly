@@ -1,0 +1,4 @@
+fragment Filter($session: Session) on Message {
+  *
+  [where chat.userId == $session.userId]
+}

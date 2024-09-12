@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/models/Session.ts"],
+  "sourcesContent": ["// All the generated types for the \"Session\" model preconditions, actions, params, etc\nimport { AmbientContext } from \"../AmbientContext\";\nimport { ActionExecutionScope, NotYetTyped, ValidationErrors, ActionTrigger } from \"../types\";\nimport { GadgetRecord, Session } from \"@gadget-client/aa-gpt-clone\";\nimport { Select } from \"@gadgetinc/api-client-core\";\nexport type DefaultSessionServerSelection = {\n  readonly __typename: true;\n      readonly id: true;\n      readonly createdAt: true;\n      readonly updatedAt: true;\n      readonly state: true;\n      readonly userId: true;\n    readonly user: false;\n  };\n\n"],
+  "mappings": ";;;;;;;;;;;;;;AAAA;AAAA;",
+  "names": []
+}

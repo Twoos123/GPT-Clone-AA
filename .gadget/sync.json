@@ -1,0 +1,9 @@
+{
+  "application": "aa-gpt-clone",
+  "environment": "development",
+  "environments": {
+    "development": {
+      "filesVersion": "16702"
+    }
+  }
+}

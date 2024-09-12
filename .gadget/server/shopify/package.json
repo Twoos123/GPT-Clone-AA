@@ -1,0 +1,4 @@
+{
+  "main": "../dist/shopify/index.js",
+  "types": "../types/shopify/index.d.ts"
+}

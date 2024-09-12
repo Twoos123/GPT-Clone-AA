@@ -1,0 +1,4 @@
+{
+  "main": "../dist/vite/index.js",
+  "types": "../types/vite/index.d.ts"
+}

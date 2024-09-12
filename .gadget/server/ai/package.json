@@ -1,0 +1,4 @@
+{
+  "main": "../dist/ai/index.js",
+  "types": "../types/ai/index.d.ts"
+}

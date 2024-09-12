@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/emails.ts"],
+  "sourcesContent": ["import type { GadgetMailer } from \"./types\";\n\n/**\n * An instance of the Gadget NodeMailer\n */\nexport let emails: GadgetMailer;\n\n/**\n * This is used internally to set the gadget nodemailer Instance\n * @internal\n */\nexport const setGadgetNodeMailer = (transporter: any): void => {\n  emails = transporter;\n};\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAKO,IAAI;AAMJ,MAAM,sBAAsB,CAAC,gBAA2B;AAC7D,WAAS;AACX;",
+  "names": []
+}
