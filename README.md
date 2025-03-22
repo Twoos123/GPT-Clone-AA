@@ -2,7 +2,7 @@
 
 This project is a side project where I've developed a ChatGPT clone using gagdet.dev that integrates with [OpenAI's completions API](https://platform.openai.com/docs/api-reference/completions), allowing signed-in users to interact with the model.
 
-[Link to project](https://aa-gpt-clone--development.gadget.app/chat-gpt)
+[Link to project](https://aa-chatbot--development.gadget.app/chat-gpt)
 
 ## Table of Contents
 
